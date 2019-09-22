@@ -21,7 +21,7 @@ function style() {
 
 // for build version type gulp copy
 
-function copy() {
+function build() {
     return gulp.src([
         'index.html',
         'css/**/*',
@@ -33,7 +33,7 @@ function copy() {
       }).pipe(gulp.dest('./dist'));
   };
 
-gulp.task('copy', copy);
+gulp.task('build', build);
 
 // for dev version type gulp
 exports.default = function () {
