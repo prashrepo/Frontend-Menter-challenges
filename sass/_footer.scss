@@ -1,0 +1,77 @@
+.footer {
+  text-align: center;
+  position: relative;
+  max-width: 100rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+
+  @include respond(tab-port){
+      
+  }
+
+  .icons {
+    padding: 2rem 0;
+
+    li {
+      padding: 0 1rem;
+      display: inline-block;
+      position: relative;
+    }
+    a {
+      &,
+      &:visited,
+      &:link
+       {
+        font-size: 1.8rem;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        color: $color__primary--blue;
+        width: 4rem;
+        height: 4rem;
+        background: transparent;
+        border: 1px solid rgba($color__gray, 0.2);
+        box-shadow: 0 0.5rem 1rem rgba($color__primary--blue, 0.1);
+        border-radius: 50%;
+        padding: 1rem 0;
+        
+      }
+    
+
+      &:hover {
+        color: $color__primary--white;
+        background-color: $color__primary--blue;
+        box-shadow: 0 0.5rem 2rem rgba($color__primary--blue, 0.4);
+      }
+    }
+  }
+
+  .copyright{
+    padding-top: 1.5rem;
+      color: $color__gray;
+      font-size: 1.4rem;
+  }
+
+  .attribution{
+      padding-top: 1.1rem;
+      font-size: 1.4rem;
+      
+
+      a,
+      a:visited,
+      a:link{
+        text-decoration: none;
+        color: hsl(228, 45%, 44%);
+        font-weight: 400;
+
+        &:hover{
+            font-style: italic;
+            border-bottom: 1px solid $color__secondary--pale-blue;
+        }
+      }
+
+      
+
+      
+  }
+
+}

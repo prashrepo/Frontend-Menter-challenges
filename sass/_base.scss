@@ -1,0 +1,40 @@
+// reset
+
+// colors
+
+$color__primary--blue: hsl(223, 87%, 63%);
+$color__primary--white: hsl(0, 0%, 96%);
+
+$color__secondary--pale-blue: hsl(222, 100%, 80%);
+$color__secondary--light-red: hsl(354, 100%, 66%);
+
+$color__gray: hsl(0, 0%, 59%);
+$color__dark-blue: hsl(209, 33%, 12%);
+
+// Typography
+
+$font__primary: "Libre Franklin", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 62.5%;
+
+  @include respond(tab-land) {
+      font-size: 56.25%;  // 9/16
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%; // 8/16
+ }
+
+  @include respond(big-desktop) {
+      font-size: 75.5%;
+  }
+}
+
