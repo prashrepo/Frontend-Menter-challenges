@@ -1,19 +1,43 @@
 {
-  "name": "ping-coming-soon-page-master",
+  "name": "frontend-boilerplate",
   "version": "1.0.0",
-  "description": "![Design preview for the Ping coming soon page coding challenge](./design/desktop-preview.jpg)",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "Simple front-end boilerplate using Gulp 4",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thecodercoder/frontend-boilerplate.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "gulp",
+    "boilerplate",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "@thecodercoder",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thecodercoder/frontend-boilerplate/issues"
+  },
+  "homepage": "https://github.com/thecodercoder/frontend-boilerplate#readme",
   "devDependencies": {
     "autoprefixer": "^9.5.1",
+    "browser-sync": "^2.26.5",
     "cssnano": "^4.1.10",
     "gulp": "^4.0.2",
+    "gulp-cache-bust": "^1.4.0",
+    "gulp-changed": "^3.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^5.0.3",
     "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.2"
-  }
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {},
+  "browserslist": [
+    "last 4 version",
+    "> 5%"
+  ]
 }

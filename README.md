@@ -1,6 +1,6 @@
-# Frontend Mentor - Ping coming soon page
+# Frontend Mentor - Huddle landing page with alternating feature blocks
 
-![Design preview for the Ping coming soon page coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Huddle landing page with alternating feature blocks coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
 
@@ -8,24 +8,7 @@ Thanks for checking out this front-end coding challenge.
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
 
-**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
-
-## The challenge
-
-Your challenge is to build out this Coming Soon page and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to: 
-
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Submit their email address using an `input` field
-- Receive an error message when the `form` is submitted if:
-	- The `input` field is empty. The message for this error should say *"Whoops! It looks like you forgot to add your email"*
-	- The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say *"Please provide a valid email address"*
-
-Want some support on the challenge? Join our Slack community and ask questions in the **#help** channel.
+**To do these challenges, you need a basic understanding of HTML, CSS and (sometimes) JavaScript.**
 
 ## Where to find everything
 
@@ -43,8 +26,6 @@ There is also a `style-guide.md` file, which contains the information you'll nee
 
 Practice using version control by creating your own GitHub repository for this challenge. This has the added benefit of being able to publish the site for free on GitHub Pages. Find out more about GitHub Pages here: [https://pages.github.com](https://pages.github.com).
 
-Another great tool you could use to get your website live is [Netlify](https://www.netlify.com). They offer a very simple and intuitive way of deploying a site for free and linking the live version to your Git repository.
-
 Also, you could try building this project in a team. This is a great way to practice collaborative coding.
 
 ## Suggested workflow
@@ -52,7 +33,7 @@ Also, you could try building this project in a team. This is a great way to prac
 Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
 
 1. Initialize your project as a public repository on [GitHub](https://github.com/). This will make it easier to share your code with the community if you need some help. If you're not sure how to do this, [have a read through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to [GitHub Pages](https://pages.github.com) or [Netlify](https://www.netlify.com).
+2. Configure your repository to publish your code to GitHub Pages. If you're not sure how to do this, [read through this guide](https://help.github.com/en/articles/configuring-a-publishing-source-for-github-pages).
 3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes that you could create to make reusable styles.
 4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
 5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
