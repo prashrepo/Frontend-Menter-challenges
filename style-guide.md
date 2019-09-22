@@ -11,13 +11,14 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Pink: hsl(322, 100%, 66%)
+- Red: hsl(0, 100%, 68%)
 
 ### Neutral
 
-- Very Pale Cyan: hsl(193, 100%, 96%)
-- Very Dark Cyan: hsl(192, 100%, 9%)
-- Grayish Blue: hsl(208, 11%, 55%)
+- Very Dark Blue: hsl(230, 29%, 20%)
+- Dark Grayish Blue: hsl(230, 11%, 40%)
+- Grayish Blue: hsl(231, 7%, 65%)
+- Light Grayish Blue: hsl(207, 33%, 95%)
 
 ## Typography
 
@@ -25,20 +26,12 @@ The designs were created to the following widths:
 
 - Font size: 18px
 
-### Headings
+### Headings, Call-to-actions, Navigation
 
-- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
-- Weights: 600
-
-### Body, Call-to-actions
-
-- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Family: [Barlow Condensed](https://fonts.google.com/specimen/Barlow+Condensed)
 - Weights: 400, 700
 
-## Icons
+### Body
 
-For the social icons, you can use a font icon library. Some suggestions can be found below:
-
-- [Font Awesome](https://fontawesome.com/)
-- [IcoMoon](https://icomoon.io/)
-- [Ionicons](https://ionicons.com/)
+- Family: [Barlow](https://fonts.google.com/specimen/Barlow)
+- Weights: 400

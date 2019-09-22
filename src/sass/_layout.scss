@@ -1,0 +1,154 @@
+.wrapper::before {
+  position: relative;
+  content: '';
+  background-color: $light-grayish-blue;
+  width: 50%;
+  height: 60%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 40px;
+  z-index: -1;
+  @include respond(phone) {
+    height: 60%;
+  }
+}
+.devices {
+  position: absolute;
+  right: 0;
+  padding-top: 16.5rem;
+  width: 48%;
+  @include respond(phone) {
+    position: relative;
+    width: 100%;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10%;
+  margin-top: 7rem;
+
+  @include respond(phone) {
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    margin: 0 3rem;
+    margin-top: 5rem;
+    width: 90%;
+  }
+
+  .logo {
+    &:hover {
+      transform: scale(1.2) rotate(-5deg);
+      transition: transform 0.2s ease-in-out;
+    }
+  }
+}
+
+main {
+  margin: 0 10%;
+  margin-top: 16rem;
+  padding-right: calc(55% - 20rem);
+
+  @include respond(phone) {
+    margin: 0 3rem;
+    margin-top: 8rem;
+    padding-right: 0;
+  }
+
+  .content {
+    position: relative;
+    span {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      background-color: $very-dark-blue;
+      color: #ffffff;
+      border-radius: 10rem;
+      padding: 0.5rem 1.5rem;
+      margin-right: 2rem;
+    }
+
+    &__info {
+      font-family: $font-secondary;
+      font-size: 2.1rem;
+      font-weight: 400;
+      letter-spacing: 5px;
+      color: $grayish-blue;
+      text-transform: uppercase;
+    }
+
+    &__description {
+      color: $dark-grayish-blue;
+      font-size: 2rem;
+      padding-right: 45%;
+      line-height: 1.4;
+
+      @include respond(phone) {
+        padding-right: 8rem;
+        font-size: 2.2rem;
+      }
+    }
+
+    h1 {
+      font-family: $font-secondary;
+      font-size: 8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $very-dark-blue;
+      margin: 4rem 0;
+
+      @include respond(phone) {
+        font-size: 5rem;
+      }
+    }
+  }
+  .button {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    margin-top: 7rem;
+
+    h2 {
+      font-family: $font-secondary;
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: 4px;
+      color: $grayish-blue;
+      text-transform: uppercase;
+      margin-left: 2.5rem;
+
+      @include respond(phone) {
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 15rem;
+
+  @include respond(phone) {
+    margin-top: 6rem;
+  }
+  .attribution {
+    font-size: 1.1rem;
+    text-align: center;
+    color: $grayish-blue;
+    @include respond(phone) {
+      font-size: 1.3rem;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: $dark-grayish-blue;
+    letter-spacing: 0.5px;
+    &:hover {
+      color: $button-red;
+    }
+  }
+}

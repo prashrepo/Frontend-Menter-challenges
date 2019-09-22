@@ -1,43 +1,18 @@
 {
-  "name": "frontend-boilerplate",
+  "name": "project-tracking-intro-component-master",
   "version": "1.0.0",
-  "description": "Simple front-end boilerplate using Gulp 4",
-  "main": "gulpfile.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/thecodercoder/frontend-boilerplate.git"
+  "description": "![Design preview for the Project tracking intro component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html --no-cache --out-dir=build --no-source-maps"
   },
-  "keywords": [
-    "gulp",
-    "boilerplate",
-    "html",
-    "css",
-    "javascript"
-  ],
-  "author": "@thecodercoder",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/thecodercoder/frontend-boilerplate/issues"
-  },
-  "homepage": "https://github.com/thecodercoder/frontend-boilerplate#readme",
   "devDependencies": {
-    "autoprefixer": "^9.5.1",
-    "browser-sync": "^2.26.5",
-    "cssnano": "^4.1.10",
-    "gulp": "^4.0.2",
-    "gulp-cache-bust": "^1.4.0",
-    "gulp-changed": "^3.2.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^5.0.3",
-    "gulp-postcss": "^8.0.0",
-    "gulp-replace": "^1.0.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.5",
-    "gulp-uglify": "^3.0.2"
-  },
-  "dependencies": {},
-  "browserslist": [
-    "last 4 version",
-    "> 5%"
-  ]
+    "autoprefixer": "^9.6.1",
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.22.12"
+  }
 }
