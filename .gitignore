@@ -1,6 +1,3 @@
 .DS_Store
-design/
-cache/
-node_modules/
-dist/
-build/
+cache
+node_modules

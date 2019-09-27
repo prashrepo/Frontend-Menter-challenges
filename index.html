@@ -2,86 +2,81 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Single price grid component" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta
-      name="Description"
-      content="Project tracker Frontend Mentor challenge"
+      name="description"
+      content="Single price grid component challenge by Frontend Mentor"
     />
-    <!-- displays site properly based on user's device -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Barlow|Barlow+Condensed:400,700&display=swap"
-      rel="stylesheet"
+    <meta
+      name="keywords"
+      content="Frontend Mentor, Single price grid component, coding challenge"
+    />
+    <meta name="robots" content="index, nofollow" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="author" content="Prashant" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=1"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./src/images/favicon-32x32.png"
+      href="src/images/favicon-32x32.png"
     />
-    <title>Frontend Mentor | Project tracking intro component</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="32x32"
+      href="src/images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/sass/main.scss" />
+    <title>Frontend Mentor | Single Price Grid Component</title>
   </head>
   <body>
-    <div class="wrapper">
-      <img
-        class="devices"
-        src="./src/images/illustration-devices.svg"
-        alt="devices"
-      />
-      <header>
-        <div class="logo">
-          <a href="#"
-            ><img src="./src/images/logo.svg" alt="project tracking logo"
-          /></a>
-        </div>
-        <nav>
-          <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-          </div>
-          <ul class="nav__links">
-            <li>
-              <a href="#product">Product</a>
-            </li>
-            <li>
-              <a href="#features">Features</a>
-            </li>
-            <li>
-              <a href="#pricing">Pricing</a>
-            </li>
-            <li>
-              <a href="#login">Login</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-      <main>
-        <div class="content">
-          <p class="content__info"><span>New</span>&nbsp;Monograph Dashboard</p>
-          <h1>Powerful insights into your team</h1>
-          <p class="content__description">
-            Project planning and time tracking for agile teams
+    <div class="wrap">
+      <main class="container">
+        <section class="container__info" aria-label="Join our community">
+          <h2 class="container__info--heading">Join our community</h2>
+          <h3>30-day, hassle-free money back guarantee</h3>
+          <p class="info__paragraph">
+            Gain access to our full library of tutorials along with expert code
+            reviews. Perfect for any developers who are serious about honing
+            their skills.
           </p>
-        </div>
-        <div class="button">
-          <a class="btn" href="#">SCHEDULE A DEMO</a>
-          <h2>TO SEE A PREVIEW</h2>
-        </div>
+        </section>
+        <section class="container__plan" aria-label="subscription plan">
+          <h2 class="plan">Monthly Subscription</h2>
+          <span class="plan__sub" are
+            ><b class="plan__price">&#36;29</b>&nbsp;per month</span
+          >
+          <p class="plan__para">Full access for less than &#36;1 a day</p>
+          <a class="btn" aria-label="signup here" href="#">Sign Up</a>
+        </section>
+        <section class="container__desc" aria-label="why us">
+          <h2 class="desc__header">Why Us</h2>
+          <p class="desc__para">
+            Tutorials by industry experts Peer &amp; expert code review Coding
+            exercises Access to our GitHub repos Community forum Flashcard decks
+            New videos every week
+          </p>
+        </section>
       </main>
-
       <footer>
         <p class="attribution">
           Challenge by
           <a
             href="https://www.frontendmentor.io?ref=challenge"
+            rel="noopener"
             target="_blank"
-            rel="noreferrer"
             >Frontend Mentor</a
-          >. Coded by <a class="prash" href="#">Prashant</a>.
+          >. Coded by <a href="#">Prashant</a>.
         </p>
       </footer>
     </div>
-    <script src="./src/js/app.js"></script>
   </body>
 </html>

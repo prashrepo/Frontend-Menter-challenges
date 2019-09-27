@@ -1,18 +1,19 @@
 {
-  "name": "project-tracking-intro-component-master",
+  "name": "parcel-boilerplate",
   "version": "1.0.0",
-  "description": "![Design preview for the Project tracking intro component coding challenge](./design/desktop-preview.jpg)",
+  "description": "parcel-boilerplate",
   "main": "index.js",
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html --no-cache --out-dir=build --no-source-maps"
+    "build": "parcel build index.html --no-cache --no-source-maps --no-minify"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^9.6.1",
-    "parcel-bundler": "^1.12.3",
-    "sass": "^1.22.12"
+    "cssnano": "^4.1.10",
+    "postcss-modules": "^1.4.1",
+    "sass": "^1.23.0-module.beta.1"
   }
 }
