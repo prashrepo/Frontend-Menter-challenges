@@ -81,6 +81,8 @@
 
     & .desc__para {
       color: rgb(229, 238, 244, 0.9);
+      list-style-type: none;
+      padding: 0;
     }
   }
 }
@@ -101,7 +103,7 @@ footer {
     &:visited {
       @include link;
       color: rgba(29, 28, 28, 0.8);
-      border-bottom: 1px dotted rgb(29, 28, 28,0.8);
+      border-bottom: 1px dotted rgb(29, 28, 28, 0.8);
     }
   }
 }
