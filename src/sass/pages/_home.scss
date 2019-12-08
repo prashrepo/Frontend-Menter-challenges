@@ -1,0 +1,305 @@
+.main {
+  margin-top: 10rem;
+}
+
+.features {
+  width: 100%;
+  margin-top: 15rem;
+  @include h2andpara;
+
+  @include respond-below(xs) {
+    &__para {
+      width: 92%;
+    }
+  }
+  &__features {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & .features-tabs {
+    @include respond-below(xs) {
+      margin: 0 8%;
+    }
+  }
+
+  & .feature-tab {
+    @include respond-below(xs) {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  & .feature-info {
+    display: flex;
+    width: 100%;
+    margin-top: 10rem;
+
+    @include respond-below(sm) {
+      flex-direction: column;
+    }
+
+    & .col-1 {
+      flex-basis: 50%;
+      display: flex;
+      justify-content: flex-end;
+      @include bgShape;
+
+      @include respond-below(lg) {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10rem;
+      }
+      &::before {
+        width: 90%;
+        height: 90%;
+        bottom: -9rem;
+        left: 0;
+        border-top-right-radius: 100rem;
+        border-bottom-right-radius: 100rem;
+
+        @include respond-below(lg) {
+          bottom: -8rem;
+        }
+        @include respond-below(md) {
+          width: 85%;
+          height: 100%;
+          bottom: -7rem;
+        }
+        @include respond-below(md) {
+          width: 85%;
+          height: 100%;
+          bottom: -7rem;
+        }
+      }
+
+      & .fe-img {
+        width: 70%;
+        @include respond-below(lg) {
+          // width: 90%;
+        }
+      }
+    }
+
+    & .col-2 {
+      flex-basis: 40%;
+      margin-left: 14rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      @include respond-below(lg) {
+        margin-left: 8rem;
+      }
+      @include respond-below(md) {
+        margin: 0 8%;
+        align-items: center;
+      }
+      & .feature__desc-h2 {
+        @include headertag;
+        font-size: 3.5rem;
+        @include respond-below(lg) {
+          font-size: 3rem;
+        }
+        @include respond-below(md) {
+          font-size: 2.5rem;
+        }
+        @include respond-below(sm) {
+          font-size: 3rem;
+        }
+        @include respond-below(xs) {
+          font-size: 2.5rem;
+        }
+      }
+      & .feature__desc-para {
+        width: 64%;
+        line-height: 1.6;
+        color: var(--color-secondary-grayblue);
+        margin-bottom: 4rem;
+        @include respond-below(lg) {
+          width: 80%;
+        }
+        @include respond-below(md) {
+          width: 80%;
+        }
+        @include respond-below(sm) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.extension {
+  @include margin;
+  margin-top: 30rem;
+  @include respond-below(xl) {
+    margin-top: 20rem;
+  }
+  @include respond-below(lg) {
+    margin-top: 15rem;
+  }
+  @include respond-below(xs) {
+    margin-top: 8rem;
+  }
+  @include h2andpara;
+  &__tab {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 10rem;
+
+    @include respond-below(lg) {
+      flex-wrap: wrap;
+    }
+    @include respond-below(sm) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  & .browser-ext {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 2rem;
+    padding: 3rem 1rem;
+    border-radius: 1.6rem;
+    box-shadow: 0 12px 20px -6px rgba(83, 104, 223, 0.2);
+    overflow: hidden;
+
+    @include respond-below(sm) {
+      width: auto;
+    }
+  
+    & .browser-logo {
+      align-self: center;
+      width: 10rem;
+      height: 10rem;
+    }
+    & h3 {
+      margin-top: 3rem;
+      margin-bottom: 0;
+      font-size: 2.4rem;
+      font-weight: 500;
+      color: var(--color-secondary-darkblue);
+      @include respond-below(lg) {
+        font-size: 1.8rem;
+      }
+    }
+    & p {
+      margin-top: 1.5rem;
+      margin-bottom: 4rem;
+      font-size: 1.6rem;
+      color: var(--color-secondary-grayblue);
+    }
+    & img {
+    }
+    &:nth-child(2) {
+      margin-top: 4rem;
+      @include respond-below(lg) {
+        margin-top: 0;
+      }
+      @include respond-below(xs) {
+        margin-top: 8rem;
+      }
+    }
+    &:nth-child(3) {
+      margin-top: 8rem;
+      @include respond-below(lg) {
+        margin-top: 4rem;
+      }
+      @include respond-below(xs) {
+        margin-top: 8rem;
+      }
+    }
+  }
+}
+
+.ques {
+  @include margin;
+  margin-top: 15rem;
+  @include respond-below(xs) {
+    margin-top: 8rem;
+  }
+  @include h2andpara;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__list {
+    margin-top: 10rem;
+    width: 100%;
+  }
+
+  .faq {
+    width: 54rem;
+    margin: 0 auto;
+    padding: 2.5rem 0;
+    position: relative;
+    cursor: pointer;
+    // @include respond-below(lg) {
+    //   width: 100%;
+    // }
+    @include respond-below(xs) {
+      width: 100%;
+    }
+    &:hover {
+      .faq__ques {
+        color: var(--color-primary-red);
+        transition: 0.1s ease;
+      }
+    }
+    &:first-child::before {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: rgba(145, 148, 161, 0.4);
+      top: 0;
+      right: 0;
+      position: absolute;
+    }
+    &::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: rgba(145, 148, 161, 0.4);
+      bottom: 0;
+      right: 0;
+      position: absolute;
+    }
+    &__ques {
+      // display: block;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      display: inline;
+      font-size: 2rem;
+      font-weight: 400;
+      color: var(--color-secondary-darkblue);
+      @include respond-below(xs) {
+        font-size: 1.8rem;
+      }
+    }
+    &__arrow {
+      position: absolute;
+      right: 2rem;
+      top: calc(2.5rem + 6px);
+      @include respond-below(xs) {
+        right: -2px;
+      }
+    }
+    .arrow-stroke {
+      path {
+        stroke: var(--color-primary-red);
+      }
+    }
+    &__ans {
+      margin-top: 4rem;
+      color: var(--color-secondary-grayblue);
+      line-height: 1.8;
+    }
+  }
+}

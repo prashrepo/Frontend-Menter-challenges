@@ -1,0 +1,103 @@
+//
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-top: 12rem;
+
+  @include respond-below(lg) {
+    flex-direction: column;
+  }
+  @include respond-below(xs) {
+    margin-top: 6rem;
+  }
+
+  & .col-1 {
+    @include margin;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+
+    @include respond-below(lg) {
+      order: 1;
+      @include margin;
+      text-align: center;
+      padding-top: 2rem;
+    }
+  }
+
+  & .col-2 {
+    flex-shrink: 2;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    & .hero-img {
+      padding-left: 10%;
+      width: 90%;
+      height: auto;
+      padding-bottom: 4rem;
+      @include respond-below(lg) {
+        width: 70%;
+      }
+      @include respond-below(md) {
+        width: calc(100vw - 10%);
+      }
+      @include respond-below(xs) {
+        width: 100%;
+      }
+    }
+
+    @include bgShape;
+    &::before {
+      bottom: 0;
+      right: 0;
+      border-top-left-radius: 100rem;
+      border-bottom-left-radius: 100rem;
+    }
+    @include respond-below(lg) {
+      &::before {
+        width: 60%;
+        height: 65%;
+        bottom: 10%;
+      }
+    }
+    @include respond-below(md) {
+      &::before {
+        width: 65%;
+        height: 65%;
+        bottom: 10%;
+      }
+    }
+    @include respond-below(sm) {
+      &::before {
+        width: 70%;
+        height: 60%;
+        bottom: 15%;
+      }
+    }
+  }
+
+  &__h1 {
+    @include headertag;
+    @include respond-below(xl) {
+      font-size: 4rem;
+    }
+    @include respond-below(md) {
+      font-size: 3.5rem;
+    }
+    @include respond-below(xs) {
+      font-size: 3.2rem;
+    }
+  }
+
+  &__para {
+    color: var(--color-secondary-grayblue);
+    line-height: 1.4;
+    margin: 0;
+  }
+
+  &__buttons {
+    margin-top: 5rem;
+  }
+}

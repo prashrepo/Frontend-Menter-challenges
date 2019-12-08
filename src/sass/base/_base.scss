@@ -1,0 +1,19 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  // @include respond-below(lg) {
+  //   font-size: 56.28%;
+  // }
+  // @include respond-below(md) {
+  //   font-size: 50%;
+  // }
+  // @include respond-above(xl) {
+  //   font-size: 62.5%;
+  // }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}

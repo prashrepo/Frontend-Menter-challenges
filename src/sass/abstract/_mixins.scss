@@ -1,0 +1,102 @@
+@mixin margin {
+  margin: 0 12%;
+  @include respond-below(xs) {
+    margin: 0 8%;
+  }
+}
+
+@mixin shadow {
+  // box-shadow: 2px 4px 8px rgba(37, 43, 70, 0.2);
+  box-shadow: 0 12px 16px -6px rgba(83, 104, 223, 0.3);
+}
+
+@mixin headertag {
+  font-size: 5.5rem;
+  color: var(--color-secondary-darkblue);
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin bgShape {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 65%;
+    height: 65%;
+    background-color: var(--color-primary-blue);
+    z-index: -1;
+  }
+}
+
+@mixin h2andpara {
+  &__heading {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: var(--color-secondary-darkblue);
+    @include respond-below(md) {
+      font-size: 3rem;
+    }
+    @include respond-below(sm) {
+      font-size: 2.5rem;
+    }
+    @include respond-below(xs) {
+      font-size: 2.5rem;
+    }
+  }
+  &__para {
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--color-secondary-grayblue);
+    line-height: 1.6;
+    width: 54rem;
+    margin: 0 auto;
+    @include respond-below(xs) {
+      width: 100%;
+      font-size: 1.6rem;
+    }
+  }
+}
+// ==============================
+// Font size mixin
+// ==============================
+$font-lock-min: 400px !default;
+$font-lock-max: 1000px !default;
+
+//  font-size
+@mixin font-size(
+  $min,
+  // font-size
+    $max: null,
+  // optional maximum font size
+    $lock-min: $font-lock-min,
+  // optional minimum viewport width
+    $lock-max: $font-lock-max // optional maximum viewport width
+) {
+  & {
+    font-size: $min;
+  }
+  @if $max {
+    @media (min-width: $lock-min) {
+      & {
+        font-size: calc(
+          #{$min} + #{num($max) - num($min)} * (100vw - #{$lock-min}) / #{num(
+              $lock-max
+            ) - num($lock-min)}
+        );
+      }
+    }
+    @media (min-width: $lock-max) {
+      & {
+        font-size: $max;
+      }
+    }
+  }
+}
+
+//  strip units helper function
+@function num($input) {
+  @return $input/($input * 0 + 1);
+}

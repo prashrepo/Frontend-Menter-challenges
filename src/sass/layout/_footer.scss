@@ -1,0 +1,147 @@
+.footer {
+  margin-top: 15rem;
+
+  & .row {
+    text-align: center;
+    background-color: var(--color-primary-blue);
+    padding: 5rem 10% 10rem 10%;
+    @include respond-below(sm) {
+      padding-right: 8%;
+      padding-left: 8%;
+    }
+    & h6 {
+      font-size: 1.3rem;
+      letter-spacing: 5px;
+      color: #ffffffe0;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    & h2 {
+      font-size: 3.4rem;
+      line-height: 1.4;
+      margin-top: 4rem;
+      color: white;
+      font-weight: 500;
+      width: 50rem;
+      margin: 0 auto;
+
+      @include respond-below(sm) {
+        width: 80%;
+      }
+      @include respond-below(xs) {
+        width: 100%;
+      }
+    }
+
+    & .contact {
+      margin-top: 4rem;
+
+      & input {
+        padding: 1.4rem 1.6rem;
+        border: none;
+        border-radius: 6px;
+        margin-right: 1rem;
+        width: 32rem;
+        border: 2px solid transparent;
+        @include respond-below(sm) {
+          width: 80%;
+          margin-right: 0;
+        }
+        @include respond-below(xs) {
+          width: 100%;
+        }
+        &::placeholder {
+          font-size: 1.5rem;
+          color: rgba(128, 128, 128, 0.5);
+        }
+      }
+      & button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 1.4rem 2.2rem;
+        transition: 0.3s;
+        font-size: 17px;
+        color: #ffffff;
+        border-radius: 6px;
+        background-color: var(--color-primary-red);
+        border: 2px solid transparent;
+        @include respond-below(sm) {
+          margin-top: 2rem;
+          //   width: 100%;
+        }
+        @include respond-below(xs) {
+          width: 100%;
+        }
+
+        &:hover {
+          color: var(--color-primary-red);
+          background-color: #fff;
+          border: 2px solid var(--color-primary-red);
+        }
+      }
+    }
+  }
+
+  &__links {
+    display: flex;
+    background-color: var(--color-secondary-darkblue);
+    padding: 4rem 10%;
+    justify-content: space-around;
+    align-items: center;
+    @include respond-below(sm) {
+      flex-direction: column;
+      justify-content: center;
+    }
+    & a {
+      font-size: 1.3rem;
+      font-weight: 400;
+      letter-spacing: 3px;
+      color: #ffffff;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: 0.1s ease-in-out;
+      @include respond-below(sm) {
+        margin-bottom: 3rem;
+        font-size: 1.4rem;
+      }
+      &:hover,
+      &:active {
+        fill: red;
+        background-color: transparent;
+        color: var(--color-primary-red);
+      }
+
+      &:nth-child(4) {
+        margin-right: 50%;
+        @include respond-below(xl) {
+          margin-right: 35%;
+        }
+        @include respond-below(lg) {
+          margin-right: 25%;
+        }
+        @include respond-below(md) {
+          margin-right: 8%;
+        }
+        @include respond-below(sm) {
+          margin-right: 0;
+        }
+      }
+    }
+
+    & .social {
+      & a {
+        margin: 0 2rem;
+        fill: #ffffff;
+        &:hover,
+        &:active {
+          fill: red;
+          background-color: transparent;
+          fill: var(--color-primary-red);
+        }
+      }
+    }
+  }
+}

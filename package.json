@@ -1,0 +1,21 @@
+{
+  "name": "bookmark-landing-page-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Bookmark landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "rm -rf dist && parcel build index.html --no-source-maps --no-cache",
+    "dele": "rm -rf dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.7.2",
+    "parcel-bundler": "^1.12.4",
+    "postcss-modules": "^1.4.1",
+    "sass": "^1.23.7"
+  },
+  "dependencies": {}
+}

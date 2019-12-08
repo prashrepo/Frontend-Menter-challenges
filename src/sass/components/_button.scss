@@ -1,0 +1,130 @@
+.btn {
+  &:link,
+  &:visited {
+    padding: 1.4rem 2.5rem;
+    font-family: var(--font-primary);
+    @include font-size(1.6rem);
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    @include shadow;
+    transition: 0.2s ease-in-out;
+    @include respond-below(xl) {
+      font-size: 1.4rem;
+    }
+    @include respond-below(xs) {
+      padding: 1rem 1.6rem;
+    }
+    @media (max-width: 390px) {
+      font-size: 1.3rem;
+      padding: 1rem 1.4rem;
+    }
+  }
+  &:hover,
+  &:active {
+    background-color: transparent;
+    color: var(--color-primary-blue);
+    border: 2px solid var(--color-primary-blue);
+  }
+
+  &__chrome,
+  &__extension,
+  &__ques {
+    color: #f4f4f4;
+    background-color: var(--color-primary-blue);
+  }
+  &__firefox {
+    margin-left: 3rem;
+    color: var(--color-secondary-darkblue);
+    background-color: hsla(229, 8%, 60%, 0.2);
+    @include respond-below(xs) {
+      margin-left: 2rem;
+    }
+
+    @media (max-width: 390px) {
+      margin-left: 1rem;
+    }
+  }
+
+  &__extension {
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+
+  &__ques {
+    margin-top: 6rem;
+  }
+}
+
+.main {
+  & .feature-tab {
+    position: relative;
+    background-color: transparent;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1.4rem 3rem;
+    transition: 0.3s;
+    font-size: 17px;
+    color: var(--color-secondary-grayblue);
+    border-bottom: 1px solid var(--color-secondary-grayblue);
+
+    &:first-child {
+      @include respond-below(xs) {
+        &::before {
+          content: "";
+          background: var(--color-secondary-grayblue);
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 1px;
+          width: 100%;
+        }
+      }
+    }
+
+    &:hover,
+    &:active {
+      background-color: transparent;
+      color: var(--color-primary-red);
+    }
+  }
+  & .active {
+    color: var(--color-secondary-greyblue);
+    position: relative;
+    &::after {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      content: "";
+      background: var(--color-primary-red);
+      bottom: -2px;
+      left: 50%;
+      height: 3px;
+      width: 100%;
+    }
+    @include respond-below(xs) {
+      &::after {
+        width: 40%;
+      }
+    }
+  }
+
+  & .feature-btn {
+    color: #f4f4f4;
+    background-color: var(--color-primary-blue);
+
+    @include respond-below(lg) {
+      padding: 1.2rem 2.2rem;
+    }
+
+    &:hover,
+    &:active {
+      background-color: transparent;
+      color: var(--color-primary-blue);
+      border: 2px solid var(--color-primary-blue);
+    }
+  }
+}
